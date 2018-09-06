@@ -33,6 +33,29 @@
   background: rgba(15, 169, 156, 1);
 }
 
+#image-div {
+  display: flex;
+  flex-flow: column wrap;
+  background: black;
+
+  color: white;
+}
+
+#codes_image {
+  max-width: 50%;
+  align-self: center;
+}
+
+#codes-text-center {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* for css media view in mobile, tablet and small computer */ /* for media such as phone, tablet or any smaller devices */
 @media all and (max-width: 800px) {
   .navigation-list {
@@ -66,5 +89,11 @@
 
   .navigation-list li:last-of-type a {
     border-bottom: none;
+  }
+
+  #codes-text-center {
+    top: 55%;
+    left: 50%;
+    font-size: 20px;
   }
 }
