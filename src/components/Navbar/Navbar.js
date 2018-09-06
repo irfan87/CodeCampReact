@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Programs from "./Programs";
+import Contact from "./Contact";
 
 class Navbar extends Component {
   render() {
@@ -19,6 +23,10 @@ class Navbar extends Component {
             <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/programs" component={Programs} />
+        <Route path="/contact" component={Contact} />
       </div>
     );
   }
