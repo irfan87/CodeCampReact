@@ -5,24 +5,39 @@ import About from "./About";
 import Programs from "./Programs";
 import Contact from "./Contact";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 class Navbar extends Component {
   render() {
     return (
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
-          <li>
-            <Link to="/programs">Our Programs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact Us</Link>
-          </li>
-        </ul>
+      <div id="navigation-div">
+        <main id="nav">
+          <ul className="navigation-list" role="navigation">
+            <li>
+              <Link to="/">CodeCamp</Link>
+            </li>
+            <li>
+              <Link to="/">
+                <FontAwesomeIcon icon="home" /> Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about">
+                <FontAwesomeIcon icon="user" /> About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs">
+                <FontAwesomeIcon icon="list" /> Our Programs
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact">
+                <FontAwesomeIcon icon="phone" /> Contact Us
+              </Link>
+            </li>
+          </ul>
+        </main>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/programs" component={Programs} />
