@@ -1,2 +1,0 @@
-# CodeCampReact
-Created with CodeSandbox
